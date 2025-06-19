@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Presley Chweneyagae Memorial</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background: #111;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
       text-align: center;
     }
 
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      min-height: 100vh;
+    }
+
     .tombstone {
       max-width: 800px;
-      margin: 40px auto;
-      background: linear-gradient(#444, #222);
+      margin: auto;
+      background: rgba(20, 20, 20, 0.85);
       border-radius: 30px 30px 0 0;
       padding: 40px 20px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
@@ -34,10 +41,11 @@
     }
 
     nav {
-      background: #222;
       margin-top: 30px;
-      border-top: 2px solid #444;
-      border-bottom: 2px solid #444;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 0;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666;
     }
 
     nav a {
@@ -55,19 +63,12 @@
 
     section {
       padding: 30px 20px;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #444;
     }
 
     section h2 {
       color: #f1f1f1;
       margin-bottom: 15px;
-    }
-
-    footer {
-      padding: 20px;
-      background: #111;
-      color: #666;
-      font-size: 14px;
     }
 
     ul {
@@ -84,61 +85,65 @@
       border-radius: 10px;
       margin-top: 10px;
     }
+
+    footer {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <div class="tombstone">
+      <h1>In Loving Memory of</h1>
+      <h1>Presley Chweneyagae</h1>
+      <p>1984 – Forever Remembered</p>
+    </div>
 
-  <div class="tombstone">
-    <h1>In Loving Memory of</h1>
-    <h1>Presley Chweneyagae</h1>
-    <p>1984 – Forever Remembered</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#videos">Videos</a>
+      <a href="#pictures">Pictures</a>
+    </nav>
+
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>This digital tombstone honors the life and legacy of Presley Chweneyagae, whose performance in <em>Tsotsi</em> left a lasting impact on South African and global cinema.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Presley</h2>
+      <p>Born in 1984, Presley Chweneyagae was an actor known for his deep emotional roles and voice in youth empowerment. His breakthrough role in <strong>Tsotsi</strong> made him a national treasure.</p>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Oscar-winning role in <strong>Tsotsi</strong></li>
+        <li>Celebrated actor in film and theatre</li>
+        <li>Community leader and mentor</li>
+        <li>National awards and recognition</li>
+      </ul>
+    </section>
+
+    <section id="videos">
+      <h2>Videos</h2>
+      <p>Watch tributes and interviews.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/abc123" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="pictures">
+      <h2>Pictures</h2>
+      <img src="https://via.placeholder.com/600x400.png?text=Presley+Chweneyagae" alt="Presley Chweneyagae">
+    </section>
+
+    <footer>
+      &copy; 2025 Presley Chweneyagae Memorial | Designed with love
+    </footer>
   </div>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#videos">Videos</a>
-    <a href="#pictures">Pictures</a>
-  </nav>
-
-  <section id="home">
-    <h2>Welcome</h2>
-    <p>This digital tombstone is created in memory of Presley Chweneyagae, whose legacy in film, theatre, and culture continues to inspire us all.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Presley</h2>
-    <p>Presley was a South African actor best known for his powerful role in the film <em>Tsotsi</em>, which won an Academy Award. Born in 1984, he became a voice of hope for many young South Africans.</p>
-  </section>
-
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Starred in <strong>Tsotsi (2005)</strong> – Oscar Winner</li>
-      <li>Award-winning actor in South African theatre</li>
-      <li>Advocate for youth and community arts</li>
-      <li>TV appearances and local film industry leader</li>
-    </ul>
-  </section>
-
-  <section id="videos">
-    <h2>Videos</h2>
-    <p>Watch memorable moments and tributes to Presley.</p>
-    <!-- Replace with real embed links -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/abc123" frameborder="0" allowfullscreen></iframe>
-  </section>
-
-  <section id="pictures">
-    <h2>Pictures</h2>
-    <p>A gallery of Presley Chweneyagae's life and career.</p>
-    <!-- Replace with real images -->
-    <img src="https://via.placeholder.com/600x400.png?text=Presley+Chweneyagae" alt="Presley">
-  </section>
-
-  <footer>
-    &copy; 2025 Presley Chweneyagae Memorial. All rights reserved.
-  </footer>
-
 </body>
 </html>
